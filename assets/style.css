@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug {}
+
+:root {
+    --drop-dark_color: #0000;
+    --drop-light_color: #ffff;
+    --drop-lighter_color: #B1B2B5;
+    --drop-sky_color: #b4d0e6;
+    --drop-sea_color: #0061fe;
+}
+
+header {}
