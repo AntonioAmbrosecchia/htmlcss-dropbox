@@ -22,11 +22,19 @@
     }
 
     .jumbo {
-        background-color: rgba(15, 107, 15, 0.575);
+        background-color: rgba(15, 107, 15, 0.486);
     }
 
-    h1 {
+    #container_h1 {
         background-color: rgba(222, 65, 65, 0.763);
+    }
+
+    #pragrafo_pg {
+        background-color: rgba(119, 31, 31, 0.692);
+    }
+
+    #jumbo_img_container {
+        background-color: rgba(124, 10, 124, 0.573);
     }
 }
 
@@ -79,12 +87,23 @@ header {
 
     .jumbo {
         display: flex;
+        align-items: flex-end;
         min-width: 62%;
         height: 550px;
     }
 
-    h1 {
+    #container_h1 {
         width: 1180px;
         height: 190px;
+    }
+
+    #pragrafo_pg {
+        height: 445px;
+        width: 400px;
+    }
+
+    #jumbo_img_container {
+        height: 445px;
+        width: 780px;
     }
 }
