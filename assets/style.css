@@ -13,8 +13,20 @@
         background-color: rgba(112, 112, 228, 0.672);
     }
 
-    .container_roba {
+    .container_link {
         background-color: rgba(14, 173, 14, 0.675);
+    }
+
+    .container_jumbo {
+        background-color: rgba(230, 230, 69, 0.743);
+    }
+
+    .jumbo {
+        background-color: rgba(15, 107, 15, 0.575);
+    }
+
+    h1 {
+        background-color: rgba(222, 65, 65, 0.763);
     }
 }
 
@@ -39,7 +51,7 @@ header {
         align-items: center;
         height: 80px;
 
-        .container_roba {
+        .container_link {
             display: flex;
             align-items: center;
 
@@ -54,5 +66,25 @@ header {
                 margin-right: 40px;
             }
         }
+    }
+}
+
+
+.container_jumbo {
+    display: flex;
+    justify-content: center;
+
+    height: 740px;
+    width: 100%;
+
+    .jumbo {
+        display: flex;
+        min-width: 62%;
+        height: 550px;
+    }
+
+    h1 {
+        width: 1180px;
+        height: 190px;
     }
 }
