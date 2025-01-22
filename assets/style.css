@@ -29,14 +29,29 @@
         background-color: rgba(222, 65, 65, 0.763);
     }
 
-    #pragrafo_pg {
+    #pragrafo_jum {
         background-color: rgba(119, 31, 31, 0.692);
     }
 
     #jumbo_img_container {
         background-color: rgba(124, 10, 124, 0.573);
     }
+
+    #container_title_selection_pg {
+        background-color: rgba(109, 109, 205, 0.595);
+    }
+
+    #titolo_paini_pag {
+        background-color: rgba(200, 70, 70, 0.815)
+    }
+
+    #selezione_fatt {
+        background-color: rgba(136, 201, 38, 0.575);
+    }
 }
+
+
+/*palette colori*/
 
 :root {
     --drop-dark_color: #0000;
@@ -45,6 +60,9 @@
     --drop-sky_color: #b4d0e6;
     --drop-sea_color: #0061fe;
 }
+
+
+/*menu di navigazione*/
 
 header {
     display: flex;
@@ -77,6 +95,7 @@ header {
     }
 }
 
+/*jumbo*/
 
 .container_jumbo {
     display: flex;
@@ -97,7 +116,7 @@ header {
         height: 190px;
     }
 
-    #pragrafo_pg {
+    #pragrafo_jum {
         height: 445px;
         width: 400px;
     }
@@ -105,5 +124,26 @@ header {
     #jumbo_img_container {
         height: 445px;
         width: 780px;
+    }
+}
+
+#container_title_selection_pg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 360px;
+
+    #titolo_paini_pag {
+        width: 1000px;
+        height: 45px;
+        margin-bottom: 60px;
+    }
+
+    #selezione_fatt {
+        width: 1000px;
+        height: 25px;
+        margin-bottom: 50px;
     }
 }
