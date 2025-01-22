@@ -4,7 +4,19 @@
     box-sizing: border-box;
 }
 
-.debug {}
+.debug {
+    header {
+        background-color: rgba(239, 103, 103, 0.642);
+    }
+
+    .menu {
+        background-color: rgba(112, 112, 228, 0.672);
+    }
+
+    .container_roba {
+        background-color: rgba(14, 173, 14, 0.675);
+    }
+}
 
 :root {
     --drop-dark_color: #0000;
@@ -14,4 +26,33 @@
     --drop-sea_color: #0061fe;
 }
 
-header {}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .menu {
+        display: flex;
+        align-items: center;
+        height: 80px;
+
+        .container_roba {
+            display: flex;
+            align-items: center;
+
+            .logo {
+                display: flex;
+                width: 100%;
+            }
+
+            .link_intera {
+                display: flex;
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+        }
+    }
+}
