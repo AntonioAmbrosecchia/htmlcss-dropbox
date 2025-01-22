@@ -48,6 +48,42 @@
     #selezione_fatt {
         background-color: rgba(136, 201, 38, 0.575);
     }
+
+    #container_piani_pagamento_top {
+        background-color: #4275c78e;
+    }
+
+    #row_p_p_top {
+        background-color: rgba(195, 64, 82, 0.52);
+    }
+
+    #container_piani_pagamento_middle {
+        background-color: rgba(171, 214, 127, 0.581);
+    }
+
+    #row_p_p_middle {
+        background-color: rgba(233, 114, 63, 0.447);
+    }
+
+    .testa_p_p {
+        background-color: #da3d3d97;
+    }
+
+    .corpo_p_p {
+        background-color: rgba(221, 160, 221, 0.481);
+    }
+
+    #container_piani_pagamento_buttom {
+        background-color: rgba(198, 29, 29, 0.462);
+    }
+
+    #enterprise_top {
+        background-color: rgba(0, 255, 255, 0.574);
+    }
+
+    #enterprise_buttom {
+        background-color: rgba(66, 169, 66, 0.589);
+    }
 }
 
 
@@ -127,6 +163,8 @@ header {
     }
 }
 
+/*titolo e selezione dei piani di pagamento*/
+
 #container_title_selection_pg {
     display: flex;
     flex-direction: column;
@@ -145,5 +183,69 @@ header {
         width: 1000px;
         height: 25px;
         margin-bottom: 50px;
+    }
+}
+
+/*piani di pagamento*/
+
+#container_piani_pagamento_top {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+
+    #row_p_p_top {
+        display: flex;
+        width: 1000px;
+    }
+
+
+    .testa_p_p {
+        height: 40px;
+        width: calc(100% / 12 * 4)
+    }
+}
+
+#container_piani_pagamento_middle {
+    display: flex;
+    justify-content: center;
+    height: 915px;
+    width: 100%;
+
+    #row_p_p_middle {
+        display: flex;
+        width: 1000px;
+    }
+
+    .corpo_p_p {
+        height: 100%;
+        width: calc(100% / 12 * 4)
+    }
+}
+
+#container_piani_pagamento_buttom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 305px;
+    width: 100%;
+
+    #sub_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 100%;
+        width: 1000px;
+    }
+
+    #enterprise_top {
+        height: 40px;
+        width: 100%;
+    }
+
+    #enterprise_buttom {
+        height: 220px;
+        width: 100%;
+
     }
 }
