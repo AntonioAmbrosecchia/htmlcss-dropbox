@@ -331,10 +331,12 @@ header {
         width: calc(100% / 12 * 4)
     }
 
-    .container_corpo {
+    .container_corpo_top {
         display: flex;
         flex-direction: column;
-        border: 1px solid var(--drop-lighter_color);
+        border-left: 1px solid var(--drop-lighter_color);
+        border-right: 1px solid var(--drop-lighter_color);
+        height: 140px;
         width: 300px;
         padding: 30px;
 
@@ -348,16 +350,28 @@ header {
 
         .periodo_di_pag {
             color: var(--drop-lighter_color);
-            padding-bottom: 50px;
         }
 
-        .vantaggi {
-            margin-bottom: 20px;
-            font-size: 15px;
-        }
     }
 
+    .container_corpo_middle {
+        display: flex;
+        border-left: 1px solid var(--drop-lighter_color);
+        border-right: 1px solid var(--drop-lighter_color);
+        height: 140px;
+        width: 300px;
+        padding: 30px;
+    }
 
+    /*.vantaggi {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    #button_prova_free {
+        text-decoration: none;
+        background-color: var(--drop-sea_color);
+    }*/
 
 }
 
