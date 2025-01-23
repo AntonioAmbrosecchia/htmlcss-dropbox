@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 .debug {
     header {
         background-color: rgba(239, 103, 103, 0.642);
@@ -107,6 +111,7 @@ header {
     height: 80px;
     padding-left: 20px;
     padding-right: 20px;
+    z-index: 1000;
 
     .menu {
         display: flex;
@@ -120,46 +125,114 @@ header {
             .logo {
                 display: flex;
                 width: 100%;
+                padding-right: 10px;
             }
 
             .link_intera {
                 display: flex;
-                margin-left: 40px;
-                margin-right: 40px;
+                margin-left: 10px;
+                margin-right: 10px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                margin-bottom: 3px;
+                text-decoration: none;
+                color: black;
             }
+
+            :hover.link_intera {
+                margin-bottom: 3px solid black;
+            }
+
+            #button_menu {
+                margin-left: 10px;
+                margin-right: 10px;
+                text-decoration: none;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                background-color: var(--drop-sea_color);
+                color: white;
+
+            }
+
         }
     }
 }
+
 
 /*jumbo*/
 
 .container_jumbo {
     display: flex;
     justify-content: center;
+    background-color: var(--drop-sky_color);
 
     height: 740px;
     width: 100%;
 
     .jumbo {
         display: flex;
-        align-items: flex-end;
         min-width: 62%;
         height: 550px;
     }
 
     #container_h1 {
+        display: flex;
+        flex-direction: column;
+
         width: 1180px;
         height: 190px;
+        font-size: 40px;
     }
 
-    #pragrafo_jum {
-        height: 445px;
+    #container_pragrafo_jum {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        font-size: 18px;
+        height: 550px;
         width: 400px;
+        line-height: 30px;
+
+        #paragrafo_jum_top {
+            margin-top: 60px;
+        }
+
+        #button_jumbo {
+            text-decoration: none;
+            margin-bottom: px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: var(--drop-sea_color);
+            color: white;
+        }
+
+        #paragrafo_jum_bottom {
+            margin-bottom: 80px;
+        }
+
+        .fa-solid,
+        .fa-arrow-down {
+            color: black;
+            font-size: 60px;
+        }
     }
 
     #jumbo_img_container {
+        display: flex;
+
+        flex-direction: column;
+        margin-top: 55px;
         height: 445px;
         width: 780px;
+
+        #img_jumbo {
+            width: 130%;
+        }
     }
 }
 
