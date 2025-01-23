@@ -324,19 +324,19 @@ header {
     }
 
     .corpo_p_p {
-        height: 100%;
         display: flex;
-        justify-content: center;
         height: 100%;
+        justify-content: center;
         width: calc(100% / 12 * 4)
     }
 
-    .container_corpo_top {
+    .container_corpo {
         display: flex;
         flex-direction: column;
+        border-bottom: 1px solid var(--drop-lighter_color);
         border-left: 1px solid var(--drop-lighter_color);
         border-right: 1px solid var(--drop-lighter_color);
-        height: 140px;
+        height: 100%;
         width: 300px;
         padding: 30px;
 
@@ -349,29 +349,101 @@ header {
         }
 
         .periodo_di_pag {
+            margin-bottom: 50px;
             color: var(--drop-lighter_color);
         }
 
+        .container_vantaggi {
+            display: flex;
+
+            .text_vantaggi {
+                flex-direction: column;
+                display: flex;
+
+                .vantaggi {
+                    margin-bottom: 20px;
+                    font-size: 15px;
+                }
+            }
+
+            .icons {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .fa-user {
+                    margin-right: 5px;
+                }
+
+                .fa-folder {
+                    margin-bottom: 20px;
+                    margin-right: 5px;
+
+                }
+
+                .fa-share-nodes {
+                    margin-right: 5px;
+                    margin-bottom: 55px;
+                }
+            }
+
+        }
+
+        .button_prova_free {
+            padding-top: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 10px;
+            margin-top: 50px;
+            margin-bottom: 35px;
+            margin-left: 15px;
+            width: 210px;
+            text-decoration: none;
+            background-color: var(--drop-sea_color);
+            color: white;
+        }
+
+        hr {
+            width: 50px;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+
+        h4 {
+            margin-bottom: 35px;
+        }
+
+        .pay_now {
+            color: var(--drop-sea_color);
+        }
+
+        .container_opzioni {
+            display: flex;
+
+            .check_icon {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .fa-check {
+                    margin-bottom: 40px;
+                    margin-right: 5px;
+                    color: var(--drop-sea_color);
+                }
+            }
+
+            .text_opzioni {
+                display: flex;
+                flex-direction: column;
+
+                .opzioni {
+                    margin-bottom: 20px;
+                    font-size: 15px;
+                }
+            }
+        }
     }
 
-    .container_corpo_middle {
-        display: flex;
-        border-left: 1px solid var(--drop-lighter_color);
-        border-right: 1px solid var(--drop-lighter_color);
-        height: 140px;
-        width: 300px;
-        padding: 30px;
-    }
-
-    /*.vantaggi {
-        margin-bottom: 20px;
-        font-size: 15px;
-    }
-
-    #button_prova_free {
-        text-decoration: none;
-        background-color: var(--drop-sea_color);
-    }*/
 
 }
 
