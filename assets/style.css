@@ -218,6 +218,7 @@ header {
         .fa-arrow-down {
             color: black;
             font-size: 60px;
+            margin-bottom: 20px;
         }
     }
 
@@ -578,4 +579,49 @@ header {
     align-items: center;
     justify-content: center;
     height: 900px;
+
+
+    #row_partners {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 967px;
+        height: 515px;
+
+        #img_partners {
+            background-image: url(../assets/img/partner.png);
+            background-size: cover;
+            height: 100%;
+            width: calc(100% / 13 * 7);
+        }
+
+        #testo_partners {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: calc(100% / 13 * 5);
+
+            #titolo_partners {
+                font-size: 25px;
+                margin-top: 60px;
+                margin-bottom: 15px
+            }
+
+            #paragrafo_partners {
+                margin-bottom: 30px;
+            }
+
+            #button_partners {
+                text-decoration: none;
+                color: black;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 10px;
+                padding-left: 10px;
+                width: 38%;
+                border: 1px solid black;
+            }
+        }
+
+    }
 }
