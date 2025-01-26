@@ -160,7 +160,6 @@ header {
     }
 }
 
-
 /*jumbo*/
 
 .container_jumbo {
@@ -251,10 +250,8 @@ header {
         height: 20px;
         margin-bottom: 50px;
         font-size: 45px;
+        margin-left: 25px;
     }
-
-
-
 }
 
 #s_container_section_pg {
@@ -265,6 +262,7 @@ header {
     height: 40px;
     margin-bottom: 50px;
     margin-top: 50px;
+    margin-left: 68px;
 
     #selezione_fatt {
         height: 25px;
@@ -525,22 +523,59 @@ header {
     height: 305px;
     width: 100%;
 
+
     #sub_container {
         display: flex;
         flex-direction: column;
         justify-content: end;
         height: 100%;
-        width: 1000px;
+        width: 967px;
+
+
     }
 
     #enterprise_top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 40px;
         width: 100%;
+        border-left: 1px solid var(--drop-lighter_color);
+        border-right: 1px solid var(--drop-lighter_color);
+        border-top: 1px solid var(--drop-lighter_color);
+
+        .fa-building {
+            margin-right: 5px;
+        }
     }
 
     #enterprise_buttom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
         height: 220px;
         width: 100%;
+        border: 1px solid var(--drop-lighter_color);
+
+        #titolo_enterprise {
+            font-size: 25px;
+        }
+
+        #par_str_enterprise {
+            margin-bottom: 35px;
+        }
+
+
 
     }
+}
+
+/*partners*/
+
+#container_partners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 900px;
 }
