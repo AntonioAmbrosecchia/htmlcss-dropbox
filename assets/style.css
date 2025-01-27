@@ -8,93 +8,10 @@ body {
     font-family: sans-serif;
 }
 
-.debug {
-    header {
-        background-color: rgba(239, 103, 103, 0.642);
-    }
-
-    .menu {
-        background-color: rgba(112, 112, 228, 0.672);
-    }
-
-    .container_link {
-        background-color: rgba(14, 173, 14, 0.675);
-    }
-
-    .container_jumbo {
-        background-color: rgba(230, 230, 69, 0.743);
-    }
-
-    .jumbo {
-        background-color: rgba(15, 107, 15, 0.486);
-    }
-
-    #container_h1 {
-        background-color: rgba(222, 65, 65, 0.763);
-    }
-
-    #pragrafo_jum {
-        background-color: rgba(119, 31, 31, 0.692);
-    }
-
-    #jumbo_img_container {
-        background-color: rgba(124, 10, 124, 0.573);
-    }
-
-    #container_title_selection_pg {
-        background-color: rgba(109, 109, 205, 0.595);
-    }
-
-    #titolo_paini_pag {
-        background-color: rgba(200, 70, 70, 0.815)
-    }
-
-    #selezione_fatt {
-        background-color: rgba(136, 201, 38, 0.575);
-    }
-
-    #container_piani_pagamento_top {
-        background-color: #4275c78e;
-    }
-
-    #row_p_p_top {
-        background-color: rgba(195, 64, 82, 0.52);
-    }
-
-    #container_piani_pagamento_middle {
-        background-color: rgba(171, 214, 127, 0.581);
-    }
-
-    #row_p_p_middle {
-        background-color: rgba(233, 114, 63, 0.447);
-    }
-
-    .testa_p_p {
-        background-color: #da3d3d97;
-    }
-
-    .corpo_p_p {
-        background-color: rgba(221, 160, 221, 0.481);
-    }
-
-    #container_piani_pagamento_buttom {
-        background-color: rgba(198, 29, 29, 0.462);
-    }
-
-    #enterprise_top {
-        background-color: rgba(0, 255, 255, 0.574);
-    }
-
-    #enterprise_buttom {
-        background-color: rgba(66, 169, 66, 0.589);
-    }
-}
-
-
 /*palette colori*/
 
 :root {
-    --drop-dark_color: #0000;
+    --drop-dark_color: #000000;
     --drop-light_color: #ffff;
     --drop-lighter_color: #B1B2B5;
     --drop-sky_color: #b4d0e6;
@@ -106,8 +23,10 @@ body {
 
 header {
     display: flex;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
     height: 80px;
     padding-left: 20px;
     padding-right: 20px;
@@ -623,5 +542,198 @@ header {
             }
         }
 
+    }
+}
+
+/*Dropbox Buisness*/
+
+#main_container_title_db {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+
+    #container_title_db {
+        display: flex;
+        width: 967px;
+
+        #title_db {
+            font-size: 38px;
+        }
+    }
+}
+
+#main_container_db {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 1000px;
+
+    .row_db {
+        display: flex;
+        height: 465px;
+        width: 967px;
+
+
+        .container_db {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            height: 460px;
+            width: calc(100% / 12 * 4);
+
+            #img_db_1 {
+                background-image: url(../assets/img/business-feature-switching-tools.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 240px;
+                width: 100%;
+            }
+
+            #img_db_2 {
+                background-image: url(../assets/img/business-feature-send-files-it.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 240px;
+                width: 100%;
+            }
+
+            #img_db_3 {
+                background-image: url(../assets/img/business-feature-coordinate-it.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 240px;
+                width: 100%;
+            }
+
+
+            #img_db_4 {
+                background-image: url(../assets/img/business-feature-integrations-it.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 240px;
+                width: 100%;
+            }
+
+
+            #img_db_5 {
+                background-image: url(../assets/img/business-feature-multi-device.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 240px;
+                width: 100%;
+            }
+
+
+            #img_db_6 {
+                background-image: url(../assets/img/business-feature-security.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 240px;
+                width: 100%;
+            }
+
+            .title_card_bd {
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+
+        }
+    }
+}
+
+/*numero di membri*/
+
+#main_container_nm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 530px;
+
+    #container_nm {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 967px;
+        height: 120px;
+
+        #titolo_nm {
+            font-size: 30px;
+        }
+    }
+}
+
+/*link footer*/
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 470px;
+    background-color: var(--drop-dark_color);
+
+    .row_lf {
+        display: flex;
+        width: 1260px;
+        height: 230px;
+        margin-top: 70px;
+
+        .container_card_lf {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: calc(100% / 12 * 3);
+
+            .top_card_lf {
+                display: flex;
+
+                .titolo_lf {
+                    font-size: 25px;
+                    color: white;
+                    margin-top: 10px;
+                }
+            }
+
+            .buttom_card_lf {
+                display: flex;
+                flex-direction: column;
+
+                .a_lf {
+                    color: white;
+                    text-decoration: none;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
+    #container_linea {
+        display: flex;
+        width: 1260px;
+        margin-top: 80px;
+
+        #linea_footer {
+            width: 120px;
+            border: 1px solid white;
+        }
+    }
+
+    #container_lingua {
+        display: flex;
+        width: 1260px;
+        margin-top: 30px;
+
+        #lingua {
+            margin-left: 5px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .fa-earth-americas,
+        .fa-caret-up {
+            text-decoration: none;
+            color: white;
+        }
     }
 }
